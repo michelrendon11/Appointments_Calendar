@@ -10,7 +10,7 @@ import java.util.*;
 
 public class AppointmentHandler {
 
-    private static final Path path = Path.of("Appointments_Calendar/src/main/resources/org/example/Appointments_Calendar/AppointmentsList.txt");
+    private static final Path path = Path.of("Appointments_Calendar-main/Appointments_Calendar/src/main/resources/org/example/Appointments_Calendar/AppointmentsList.txt");
     private static final File file = new File(path.toString());
 
     public static void writeToFile(String line) throws IOException {
@@ -103,3 +103,4 @@ public class AppointmentHandler {
         return file;
     }
 }
+
