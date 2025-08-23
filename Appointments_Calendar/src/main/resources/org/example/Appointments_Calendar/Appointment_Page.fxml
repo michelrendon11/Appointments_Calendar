@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" prefHeight="550.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/22" fx:controller="org.example.Appointments_Calendar.AppointmentController">
+    <VBox fx:id="appointmentPane" alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane fx:id="titlePane">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <HBox fx:id="titleNamePane" alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <padding>
+                    <Insets left="20.0"/>
+                </padding>
+                <Text fx:id="appointmentViewTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment View"
+                      textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Text>
+            </HBox>
+            <HBox fx:id="titleClosePane" alignment="CENTER_RIGHT" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <padding>
+                    <Insets right="10.0"/>
+                </padding>
+                <Button fx:id="close" mnemonicParsing="false" onMouseClicked="#close" text="X" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Button>
+            </HBox>
+        </AnchorPane>
+        <HBox alignment="CENTER" spacing="20.0">
+            <Text fx:id="weekDayText" layoutX="177.0" layoutY="37.0" stroke="#d90505" strokeType="OUTSIDE"
+                  strokeWidth="0.0" text="Mon" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <Text fx:id="monthText" stroke="#d90505" strokeType="OUTSIDE" strokeWidth="0.0" text="Jan"
+                  textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <Text fx:id="dayText" strokeType="OUTSIDE" strokeWidth="0.0" text="01" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <Text fx:id="yearText" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" top="20.0"/>
+            </padding>
+            <VBox alignment="CENTER_RIGHT" spacing="20.0">
+                <padding>
+                    <Insets left="20.0" right="5.0"/>
+                </padding>
+                <Text fx:id="nameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="numberText" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Text>
+                <Text fx:id="emailText" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Text>
+                <HBox.margin>
+                    <Insets left="10.0" right="10.0"/>
+                </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" spacing="12.0">
+                <padding>
+                    <Insets left="5.0" right="40.0"/>
+                </padding>
+                <TextField fx:id="nameField"/>
+                <TextField fx:id="phoneField" prefHeight="26.0" prefWidth="430.0"/>
+                <TextField fx:id="emailField"/>
+            </VBox>
+        </HBox>
+        <VBox alignment="CENTER" spacing="5.0">
+            <padding>
+                <Insets bottom="20.0" left="60.0" top="5.0"/>
+            </padding>
+            <Text fx:id="serviceText" strokeType="OUTSIDE" strokeWidth="0.0" text="Service" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <Text fx:id="timeText" layoutX="248.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9:30 am"
+                  textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="25.0"/>
+                </font>
+            </Text>
+            <TextArea fx:id="serviceFiled" maxHeight="100.0" maxWidth="350.0" minHeight="100.0" prefWidth="350.0"/>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </VBox>
+        <HBox alignment="CENTER" spacing="50.0">
+            <padding>
+                <Insets bottom="10.0" top="10.0"/>
+            </padding>
+            <Button fx:id="create" mnemonicParsing="false" onMouseClicked="#create" text="Create"/>
+            <Button fx:id="edit" mnemonicParsing="false" onMouseClicked="#edit" text="Edit"/>
+            <Button fx:id="cancel" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancel"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

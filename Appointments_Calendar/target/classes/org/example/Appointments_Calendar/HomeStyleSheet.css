@@ -1,0 +1,140 @@
+#topPaneButtons { -fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: linear-gradient(#ffcccc, #bb7878); -fx-border-radius: 20; -fx-background-insets: 0; -fx-effect: dropshadow(gaussian, #cc9999, 5, 0, 5, 5); }
+#topPaneButtons:pressed { -fx-effect: dropshadow(gaussian, #cc9999, 5, 5, 0.5, 0.5); }
+#topPaneButtons:hover { -fx-background-color: linear-gradient(#996699, #ccccff); }
+#topPaneButtons:disabled, #topPaneButtons > * { -fx-opacity: 1.0; -fx-background-color: #ffcccc; }
+
+#TodayDayButton { -fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: linear-gradient(#ccffff, #0099cc); -fx-border-radius: 20; -fx-background-insets: 0; -fx-effect: dropshadow(gaussian, #cc9999, 5, 0, 5, 5); }
+#TodayDayButton:pressed { -fx-effect: dropshadow(gaussian, #cc9999, 5, 5, 0.5, 0.5); }
+#TodayDayButton:hover { -fx-background-color: linear-gradient(#0099cc, #ccffff); }
+#TodayDayButton:disabled { -fx-opacity: 1.0; -fx-background-color: #ccffff; }
+
+#topPane { -fx-spacing: 30; -fx-alignment: center; }
+
+#TopPaneNamesBox { -fx-alignment: bottom-center; }
+
+#TopPaneNames { -fx-font-size: 20; -fx-font-weight: bold; -fx-fill: #660066; }
+
+#yearAndMonthBox { -fx-spacing: 5; -fx-background-color: #ffcccc; -fx-alignment: center; }
+
+#titlePane { -fx-background-color: #ff9999; -fx-background-radius: 20 20 0 0; -fx-alignment: center; }
+
+#titleBox { -fx-background-color: #ff9999; -fx-background-radius: 20 0 0 0; -fx-alignment: center_left; }
+
+#titleText { -fx-font-weight: bold; -fx-font-size: 20; -fx-fill: white; }
+
+#titleButtons { -fx-alignment: center_right; -fx-spacing: 10; -fx-background-radius: 0 20 0 0; -fx-effect: dropshadow(gaussian, #333333, 5, 0, 5, 5); }
+
+#closeButton { -fx-background-color: linear-gradient(#ff6666, #cc0033); -fx-background-radius: 20; -fx-text-fill: white; -fx-font-weight: bold; }
+#closeButton:hover { -fx-background-color: linear-gradient(#cc0033, #ff6666); -fx-background-radius: 5; }
+
+#minimizeButton { -fx-background-color: linear-gradient(#ffffcc, #cccc00); -fx-background-radius: 20; -fx-text-fill: black; -fx-font-weight: bold; }
+#minimizeButton:hover { -fx-background-color: linear-gradient(#cccc00, #ffffcc); -fx-background-radius: 5; }
+
+#maximizeButton { -fx-background-color: linear-gradient(#ffff00, #339933); -fx-background-radius: 20; -fx-font-weight: bold; }
+#maximizeButton:hover { -fx-background-color: linear-gradient(#339933, #ffff00); -fx-background-radius: 5; }
+
+#CenterPaneWeekText { -fx-font-weight: bold; -fx-font-size: 20; -fx-fill: #663366; }
+
+#homeAppointmentView { -fx-background-color: #ffcccc; -fx-border-color: #996699; -fx-alignment: top-center; }
+#homeAppointmentView:hover { -fx-border-width: 3; }
+
+#MonthEachPane { -fx-border-color: #ffcccc; }
+#MonthEachPane:hover { -fx-border-color: #0066cc; }
+
+#CenterPaneEachMonthWeekText { -fx-fill: #cc0033; -fx-font-weight: bold; }
+
+#monthInAYear { -fx-font-weight: bold; }
+
+#MonthsInYear { -fx-border-color: #ffcccc; }
+#MonthsInYear:hover { -fx-border-color: #003366; -fx-background-color: #ff9999; }
+
+#TodayDay { -fx-fill: #000000; -fx-font-weight: bold; }
+
+#TodayPaneMonthToday { -fx-background-color: #ccffff; -fx-border-color: #000000; -fx-alignment: top_center; }
+#TodayPaneMonthToday:hover { -fx-border-width: 3; }
+
+#TodayPaneMonthBusyToday { -fx-background-color: #ffff00; -fx-border-color: #000000; -fx-alignment: top_center; }
+#TodayPaneMonthBusyToday:hover { -fx-border-width: 3; }
+
+#TodayPaneMonthBusy { -fx-background-color: #99cc66; -fx-border-color: #99cc66; -fx-alignment: top_center; }
+#TodayPaneMonthBusy:hover { -fx-border-width: 3; -fx-border-color: #000000; }
+
+#TodayPaneYear { -fx-border-color: #cccccc; -fx-background-color: #ffffcc; }
+#TodayPaneYear:hover { -fx-border-color: #000000; -fx-background-color: #0099cc; }
+
+#TodayPaneYearBusy { -fx-border-color: #000000; -fx-background-color: #ffff00; }
+#TodayPaneYearBusy:hover { -fx-border-color: #ffffcc; -fx-background-color: #0099cc; }
+
+#BusyPaneYear { -fx-border-color: #cccc00; -fx-background-color: #cccc00; }
+#BusyPaneYear:hover { -fx-border-color: #000000; }
+
+#EmptyText { -fx-fill: #999999; -fx-font-weight: bold; }
+#EmptyPane { -fx-background-color: #cccccc; -fx-border-color: #ffcccc; -fx-alignment: top_center; }
+
+#ScrollPane { -fx-fit-to-width: true; -fx-vbar-policy: as-needed; -fx-hbar-policy: never; -fx-background-color: #ffcccc; }
+.scroll-bar:horizontal, .scroll-bar:vertical { -fx-background-color: #ffcccc; }
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb { -fx-background-color: #cc9999; -fx-background-radius: 10; }
+.scroll-bar:horizontal .thumb:hover, .scroll-bar:vertical .thumb:hover { -fx-background-color: #996699; }
+.scroll-bar:horizontal .thumb:pressed, .scroll-bar:vertical .thumb:pressed { -fx-background-color: #996699; }
+
+.increment-button, .decrement-button { -fx-pref-width: 25; -fx-pref-height: 30; -fx-background-color: #cc9999; }
+.increment-button:hover, .decrement-button:hover { -fx-background-color: #996699; }
+.increment-button:pressed, .decrement-button:pressed { -fx-background-color: #cccc00; }
+
+
+#HourlyBoxesWeek { -fx-background-color: #ffcccc; -fx-pref-height: 50; -fx-alignment: center-left; }
+
+#HourlyBoxes { -fx-background-color: #ffcccc; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #666666; }
+#HourlyBoxes > #HourlyBoxesText { -fx-background-color: #ffcccc; -fx-pref-height: 50; -fx-alignment: center-left; -fx-font-size: 15; }
+#HourlyBoxes:hover { -fx-background-color: #ccffff; }
+#HourlyBoxes:hover > #HourlyBoxesText { -fx-background-color: #ccffff; }
+#HourlyBoxes:pressed { -fx-background-color: linear-gradient(#ccffff, #663366); }
+#HourlyBoxes:pressed > #HourlyBoxesText { -fx-background-color: linear-gradient(#ccffff, #663366); }
+#HourlyBoxes:disabled { -fx-background-color: #666666; -fx-border-color: #cccccc; }
+#HourlyBoxes:disabled > #HourlyBoxesText { -fx-background-color: #666666; -fx-border-color: #cccccc; }
+
+#HourlyBoxesBusy { -fx-background-color: #99cc66; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #666666; }
+#HourlyBoxesBusy > #HourlyBoxesBusyText { -fx-background-color: #99cc66; -fx-pref-height: 50; -fx-alignment: center-left; -fx-font-size: 15; }
+#HourlyBoxesBusy:hover { -fx-background-color: #0099cc; }
+#HourlyBoxesBusy:hover > #HourlyBoxesBusyText { -fx-background-color: #0099cc; }
+#HourlyBoxesBusy:pressed { -fx-background-color: linear-gradient(#ccffff, #99cc66); }
+#HourlyBoxesBusy:pressed > #HourlyBoxesBusyText { -fx-background-color: linear-gradient(#ccffff, #99cc66); }
+#HourlyBoxesBusy:disabled { -fx-background-color: #ff6666; -fx-border-color: #cccccc; }
+#HourlyBoxesBusy:disabled > #HourlyBoxesBusyText { -fx-background-color: #ff6666; -fx-border-color: #cccccc; }
+
+#HourlyText { -fx-font-weight: bold; -fx-font-size: 20; }
+
+#WeekAppointments { -fx-background-color: #ffcccc; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #cc9999; }
+#WeekAppointments > #WeekAppointmentsText { -fx-background-color: #ffcccc; -fx-pref-height: 10; -fx-alignment: center-left; }
+#WeekAppointments:hover { -fx-background-color: #ccffff; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #000000; }
+#WeekAppointments:hover > #WeekAppointmentsText { -fx-background-color: #ccffff; -fx-pref-height: 10; -fx-alignment: center-left; }
+#WeekAppointments:pressed { -fx-background-color: linear-gradient(#ccffff, #003366); }
+#WeekAppointments:pressed > #WeekAppointmentsText { -fx-background-color: linear-gradient(#ccffff, #003366); }
+
+#WeekAppointmentsBusy { -fx-background-color: #99cc66; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #cc9999; }
+#WeekAppointmentsBusy > #WeekAppointmentsBusyText { -fx-background-color: #99cc66; -fx-pref-height: 10; -fx-alignment: center-left; }
+#WeekAppointmentsBusy:hover { -fx-background-color: #ffff00; -fx-pref-height: 50; -fx-alignment: center-left; -fx-border-color: #000000; }
+#WeekAppointmentsBusy:hover > #WeekAppointmentsBusyText { -fx-background-color: #ffff00; -fx-pref-height: 10; -fx-alignment: center-left; }
+#WeekAppointmentsBusy:pressed { -fx-background-color: linear-gradient(#ffff66, #336633); }
+#WeekAppointmentsBusy:pressed > #WeekAppointmentsBusyText { -fx-background-color: linear-gradient(#ffff66, #336633); }
+
+#WeeksRows { -fx-alignment: center-left; -fx-perf-height: 30; -fx-spacing: 2; }
+
+#WeekViewTime { -fx-alignment: center-left; }
+
+#WeekDayDayView { -fx-font-weight: bold; -fx-font-size: 20; -fx-fill: #663366; }
+
+#WeekViewWeekNames { -fx-border-color: #ffcccc; }
+#WeekViewWeekNames:hover { -fx-border-color: #0066cc; -fx-background-color: linear-gradient(#ccffff, #0099cc); }
+#WeekViewWeekNames:pressed { -fx-border-color: #0066cc; -fx-background-color: linear-gradient(#0099cc, #ccffff); }
+
+#TodayPane { -fx-border-color: #663366; -fx-background-color: linear-gradient(#ccffff, #996699); }
+#TodayPane:hover { -fx-border-color: white; -fx-background-color: linear-gradient(#ccffff, #003399); }
+#TodayPane:pressed { -fx-border-color: white; -fx-background-color: linear-gradient(#0099cc, #ccffff); }
+
+
+
+
+#X { -fx-fill: linear-gradient(#cc9999, #ff9999); }
+#Y:pressed { -fx-effect: dropshadow(gaussian, #cc9999, 1, 1, 0.5, 0.5); }
+

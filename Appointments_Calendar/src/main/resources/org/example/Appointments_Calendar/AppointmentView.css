@@ -1,0 +1,26 @@
+#appointmentPane { -fx-background-color: linear-gradient(#ffcccc, #996699); -fx-background-radius: 20 20 20 20; }
+
+#titlePane { -fx-background-color: #996699; -fx-background-radius: 20 20 0 0; }
+
+#appointmentViewTitle { -fx-fill: #ffffcc; }
+
+#close { -fx-background-color: linear-gradient(#ff9999, #cc0033); -fx-background-radius: 20; -fx-text-fill: #ffffcc; -fx-effect: dropshadow(gaussian, #333333, 10, 0, 5, 5); }
+#close:hover { -fx-background-color: linear-gradient(#ff0033, #ff9999); -fx-background-radius: 10; }
+#close:pressed { -fx-effect: dropshadow(gaussian, #cc9999, 5, 5, 0.5, 0.5); }
+
+#buttons { -fx-background-color: linear-gradient(#ccffff, #0066cc); -fx-font-size: 20; -fx-text-fill: #003366; -fx-background-radius: 20; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, #333333, 10, 0, 5, 5); }
+#buttons:hover { -fx-background-color: linear-gradient(#0066cc, #ccffff); -fx-background-radius: 15; }
+#buttons:pressed { -fx-effect: dropshadow(gaussian, #cc9999, 5, 3, 0.5, 0.5); }
+#buttons:disabled { -fx-background-color: #0099cc; -fx-text-fill: #000000; }
+
+#fields { -fx-background-color: linear-gradient(#ffffff, #ccffff); -fx-border-color: #6699cc; -fx-font-weight: bold; -fx-font-size: 15; }
+#fields:disabled { -fx-background-color: black; -fx-text-fill: white; }
+
+#area { -fx-background-color: linear-gradient(#ffffff, #ccffff); -fx-border-color: #6699cc; -fx-font-weight: bold; -fx-font-size: 15; }
+#area:disabled { -fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 20; }
+#area .content{ -fx-background-color: linear-gradient(#ffffff, #ccffff); }
+
+#texts1 { -fx-font-size: 30; -fx-font-weight: bold; }
+
+#texts2 { -fx-font-size: 20; -fx-font-weight: bold; }
+

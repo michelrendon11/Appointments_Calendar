@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0"
+            style="-fx-background-color: #ffcccc; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/22"
+            fx:controller="org.example.Appointments_Calendar.HomePageController">
+
+</AnchorPane>
