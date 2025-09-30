@@ -1,5 +1,5 @@
 ### Appointments_Calendar
-A simple Windows Appointments Application built just for fun. The AppointmentsList.txt file is not protected, and is not encoded; handle with care.
+A simple Appointments Application for Windows built just for fun. The AppointmentsList.txt file is not protected, and is not encoded; handle with care.
 To run the application:
  - Download Zip file
  - Extract project
